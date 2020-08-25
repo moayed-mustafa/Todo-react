@@ -25,7 +25,14 @@ const NewTodoForm = ({submit}) => {
         <form
         onSubmit={handleSubmit}>
             <label htmlFor='todo' style={{marging:10}}>Todo: </label>
-            <input type='text' name='task' id='todo' value={formData.task} onChange={changeForm}></input>
+            <input
+                type='text'
+                name='task'
+                id='todo'
+                value={formData.task}
+                onChange={changeForm}
+                placeholder='todo'
+            ></input>
             <button>Add</button>
         </form>
     )

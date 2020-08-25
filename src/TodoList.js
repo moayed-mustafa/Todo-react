@@ -7,9 +7,9 @@ import  NewTodoForm from './NewTodoForm'
 const TodoList = () => {
     // set the state
     const INITIAL_STATE = [
-        {id: uuid(), task: 'clean the room', done: false},
+        {id: uuid(), task: 'clean the house', done: false},
         {id: uuid(), task: 'cook lunch', done: false},
-        {id: uuid(), task: 'wash the car', done: false},
+        {id: uuid(), task: 'code', done: false},
     ]
 
     const [todos, setTodos] = useState(INITIAL_STATE)

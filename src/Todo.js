@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { v4 as uuid } from 'uuid'
+import React from 'react'
 
 
 
@@ -8,6 +7,7 @@ const Todo = ({task, done, id, remove, finished }) => {
     return (
         <ul>
             <li
+                data-testid= {task}
                 onClick = {finished}
                 id={id}>{task}
                 <button onClick={remove}>X</button>
